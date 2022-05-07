@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+      }
+      .item1 {
+        /* margin-left: -600px; */
+        /* margin-right: 600px; */
+      }
+      #navbar #anchor {
+        padding: 20px;
+        display: flex;
+        justify-content: right;
+        /* border: 2px solid black; */
+        width: 1200px;
+        /* text-decoration: none; */
+      }
+      .item2 {
+        margin-right: 50px;
+        text-decoration: none;
+        color: purple;
+        font-size: 20px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .item3 {
+        margin-right: 50px;
+        text-decoration: none;
+        color: purple;
+        font-size: 20px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .item4 {
+        margin-right: 50px;
+        text-decoration: none;
+        color: purple;
+        font-size: 20px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .item5 {
+        margin-right: 50px;
+        text-decoration: none;
+        color: purple;
+        font-size: 20px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      a:hover {
+        color: blue;
+      }
+      .container1 {
+        display: flex;
+        /* border: 1px solid black; */
+        flex-direction: row;
+        /* height: 1000px; */
+      }
+      .container1 .img1 {
+        margin-right: 300px;
+        margin-left: 200px;
+      }
+      .container1 .intro {
+        font-size: xx-large;
+      }
+      .container1 .intro h1 {
+        margin-bottom: -35px;
+        padding-bottom: -30px;
+        line-height: -30px;
+        /* border: 1px solid black; */
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .container1 .icons {
+        /* border: 1px solid black; */
+        margin-top: 50px;
+        padding: 20px;
+      }
+      .container1 .icons img {
+        margin-right: 40px;
+        /* color: coral; */
+      }
+      .container1 .icons img:hover {
+        background-color: cornflowerblue;
+      }
+      .container1 button {
+        background-color: deepskyblue;
+        color: purple;
+        border-radius: 50%;
+      }
+      .container1 button h3:hover {
+        color: black;
+      }
+      .about {
+        margin-top: 200px;
+        text-align: center;
+        color: purple;
+        margin-bottom: 100px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .about:hover {
+        color: black;
+      }
+      .box {
+        display: flex;
+        /* margin: 100px auto; */
+      }
+      .box img {
+        margin-left: 200px;
+        margin-right: 100px;
+      }
+      .box .para {
+        /* border: 1px solid black; */
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        font-size: larger;
+        color: purple;
+      }
+      .skills {
+        margin-top: 50px;
+        text-align: center;
+        color: purple;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .skills:hover {
+        color: black;
+      }
+      .tech .pro .softwares {
+        /* border: 1px solid grey; */
+        display: flex;
+        border-bottom: 4px solid purple;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .tech {
+        display: flex;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .tech .pro {
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      .tech .rick {
+        margin-right: 100px;
+      }
+      .tech .pro .softwares .react {
+        margin-right: 20px;
+      }
+      .tech .pro .softwares .react:hover {
+        background-color: purple;
+      }
+      .work {
+        margin-top: 100px;
+        text-align: center;
+        color: purple;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .work:hover {
+        color: black;
+      }
+      .working {
+        display: flex;
+        justify-content: center;
+      }
+      .working img {
+        margin-right: 20px;
+      }
+
+      .web {
+        display: flex;
+        margin-left: 150px;
+      }
+      .web p {
+        margin-right: 300px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      #form form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 100px auto;
+        margin-left: 500px;
+        margin-right: 500px;
+        font-size: larger;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        color: purple;
+      }
+      #form form input {
+        margin-bottom: 20px;
+        height: 30px;
+      }
+      #form form label {
+        margin-bottom: 10px;
+      }
+      #form form input text {
+        height: 20px;
+      }
+      #form form button {
+        width: 100px;
+        font-size: larger;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        color: purple;
+        background-color: skyblue;
+      }
+      #form form button:hover {
+        color: crimson;
+      }
+      #form form input text ::placeholder {
+        font-size: larger;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        color: purple;
+      }
+      .ending {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        color: purple;
+        /* margin-bottom: 100px; */
+        background-color: cornflowerblue;
+        padding: 20px;
+      }
+      .ending h3 {
+      }
+      .ending .foot img {
+        margin-right: 20px;
+      }
+      .ending .square {
+        display: flex;
+        padding-bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div>
+        <a class="item1" href="#"
+          ><img
+            src="https://cdn.pixabay.com/photo/2020/04/14/09/54/blue-matrix-5041719__340.jpg"
+            width="100px"
+            height="100px"
+            style="border-radius: 50%"
+            alt=""
+        /></a>
+      </div>
+      <div id="anchor">
+        <a class="item2" href="#">Home</a>
+        <a class="item3" href="#">Skills</a>
+        <a class="item4" href="#">Work</a>
+        <a class="item5" href="#">Contact</a>
+      </div>
+    </nav>
+    <section class="container1">
+      <!-- <div class="img1"> -->
+      <img
+        class="img1"
+        src="https://cdn.pixabay.com/photo/2020/06/17/00/24/person-5307653__340.png"
+        alt=""
+      />
+      <div class="intro">
+        <h1>Hi,</h1>
+
+        <h1>I'm<span style="color: purple"> Saurabh</span></h1>
+
+        <h1>Full Stack Developer</h1>
+        <div class="icons">
+          <img
+            src="https://cdn-icons.flaticon.com/png/128/3670/premium/3670125.png?token=exp=1651910045~hmac=65609a14f92924aa72010d677fe0549c"
+            width="50px"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/145/145807.png"
+            width="50px"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1051/1051326.png"
+            width="50px"
+            alt=""
+          />
+        </div>
+        <button><h3>Download Resume</h3></button>
+      </div>
+    </section>
+    <div class="about">
+      <h1>About</h1>
+    </div>
+
+    <main>
+      <div class="box">
+        <img
+          src="https://cdn.pixabay.com/photo/2016/08/29/08/55/work-1627703__480.jpg"
+          width="500px"
+          alt=""
+        />
+        <div class="para">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            doloribus ex nulla inventore, repellat debitis animi, maxime at
+            ullam odio dignissimos expedita cumque eligendi aspernatur
+            temporibus, voluptas a repellendus reiciendis. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Mollitia doloribus ex nulla
+            inventore, repellat debitis animi, maxime at ullam odio dignissimos
+            expedita cumque eligendi aspernatur temporibus, voluptas a
+            repellendus reiciendis.
+          </p>
+        </div>
+      </div>
+    </main>
+    <div class="skills">
+      <h1>Skills</h1>
+    </div>
+    <div class="tech">
+      <div class="pro">
+        <h2>Proffesional Skills</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
+          architecto nulla ipsum ipsa temporibus itaque excepturi aut accusamus
+          quia tempora!
+        </p>
+        <div class="softwares">
+          <img
+            class="react"
+            src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+            width="40px"
+            alt=""
+          />
+          <h3>JavaScript</h3>
+        </div>
+        <div class="softwares">
+          <img
+            class="react"
+            src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png"
+            width="40px"
+            alt=""
+          />
+          <h3>C++</h3>
+        </div>
+        <div class="softwares">
+          <img
+            class="react"
+            src="https://cdn-icons-png.flaticon.com/512/919/919825.png"
+            width="40px"
+            alt=""
+          />
+          <h3>Node.js</h3>
+        </div>
+        <div class="softwares">
+          <img
+            class="react"
+            src="https://cdn-icons-png.flaticon.com/512/1125/1125761.png"
+            width="40px"
+            alt=""
+          />
+          <h3>React.js</h3>
+        </div>
+      </div>
+      <div class="rick">
+        <img
+          src="https://wallpapercave.com/dwp1x/wp2065394.png"
+          height="380px"
+          width="600px"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="work">
+      <h1>My Work</h1>
+    </div>
+    <div class="">
+      <div class="working">
+        <img
+          src="https://ghoshsuman845.github.io/Portfolio-Website/images/work1.jpg"
+          width="400px"
+          height="250px"
+          alt=""
+        />
+
+        <img
+          src="https://ghoshsuman845.github.io/Portfolio-Website/images/work2.jpg"
+          width="400px"
+          height="250px"
+          alt=""
+        />
+
+        <img
+          src="https://ghoshsuman845.github.io/Portfolio-Website/images/work3.jpg"
+          width="400px"
+          height="250px"
+          alt=""
+        />
+      </div>
+      <div class="web">
+        <p>LMS Website Demo</p>
+        <p>LMS Website Demo</p>
+        <p>LMS Website Demo</p>
+      </div>
+    </div>
+    <div class="">
+      <div class="working">
+        <img
+          src="https://ghoshsuman845.github.io/Portfolio-Website/images/work4.jpg"
+          width="400px"
+          height="250px"
+          alt=""
+        />
+
+        <img
+          src="https://ghoshsuman845.github.io/Portfolio-Website/images/work5.jpg"
+          width="400px"
+          height="250px"
+          alt=""
+        />
+
+        <img
+          src="https://ghoshsuman845.github.io/Portfolio-Website/images/work6.jpg"
+          width="400px"
+          height="250px"
+          alt=""
+        />
+      </div>
+      <div class="web">
+        <p>LMS Website Demo</p>
+        <p>LMS Website Demo</p>
+        <p>LMS Website Demo</p>
+      </div>
+    </div>
+    <div class="work">
+      <h1>Contact</h1>
+    </div>
+    <div id="form">
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="name" />
+        <label>E-Mail</label>
+        <input type="text" placeholder="eg - saurabh@gmail.com" />
+        <label>Your Message</label>
+        <input type="text" style="height: 80px" />
+        <!-- <label>Submit</label> -->
+        <button>Submit</button>
+      </form>
+    </div>
+    <footer>
+      <div class="ending">
+        <h1>Saurabh Pandey</h1>
+        <div class="foot">
+          <img
+            src="https://cdn-icons.flaticon.com/png/128/3670/premium/3670125.png?token=exp=1651910045~hmac=65609a14f92924aa72010d677fe0549c"
+            width="50px"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/145/145807.png"
+            width="50px"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1051/1051326.png"
+            width="50px"
+            alt=""
+          />
+        </div>
+        <h3>© 2022 copyright all right reserved</h3>
+        <div class="square">
+          <img
+            style="flex-direction: row"
+            src="https://cdn-icons-png.flaticon.com/128/4975/4975674.png"
+            width="30px"
+            alt=""
+          />
+          <img
+            style="flex-direction: row"
+            src="https://cdn-icons-png.flaticon.com/128/4975/4975674.png"
+            width="30px"
+            alt=""
+          />
+          <img
+            style="flex-direction: row"
+            src="https://cdn-icons-png.flaticon.com/128/4975/4975674.png"
+            width="30px"
+            alt=""
+          />
+          <img
+            style="flex-direction: row"
+            src="https://cdn-icons-png.flaticon.com/128/4975/4975674.png"
+            width="30px"
+            alt=""
+          />
+          <img
+            style="flex-direction: row"
+            src="https://cdn-icons-png.flaticon.com/128/4975/4975674.png"
+            width="30px"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
